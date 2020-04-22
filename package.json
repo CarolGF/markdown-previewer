@@ -1,0 +1,58 @@
+{
+  "name": "markdown-previewer",
+  "version": "0.1.0",
+  "homepage": "https://carolgf.github.io/markdown-previewer",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "marked": "^0.8.2",
+    "react": "^16.13.0",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "babel-preset-nano-react-app": "^0.1.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "babel": {
+    "presets": [
+      "nano-react-app"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ],
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "pragmaFrag": "React.Fragment"
+        }
+      ]
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
